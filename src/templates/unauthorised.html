@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UnAuthorised</title>
+    <link rel="stylesheet" href="../static/styles.css" />
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+        margin: 0;
+        font-family: "Segoe UI", "Roboto", Arial, sans-serif;
+      }
+      .unauth-container {
+        background: #fff;
+        padding: 2.5rem 2rem;
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.12);
+        max-width: 350px;
+        width: 100%;
+        text-align: center;
+      }
+      h1 {
+        color: #e53e3e;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+      p {
+        color: #4a5568;
+        font-size: 1.1rem;
+      }
+      @media (max-width: 480px) {
+        .unauth-container {
+          padding: 1.5rem 0.5rem;
+          max-width: 95vw;
+        }
+        h1 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="unauth-container">
+      <h1>UnAuthorised</h1>
+      <p>You are not authorised to access this page</p>
+    </div>
+  </body>
+</html>

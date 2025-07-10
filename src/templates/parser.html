@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Parser</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="parser-container">
+        {% if greeting %}
+            <h1>{{ greeting }}</h1>
+        {% else %}
+            <h1>Parser</h1>
+        {% endif %}
+        <form action="parser" method="post" enctype="multipart/form-data">
+            <label for="resume">Resume:</label>
+            <input type="file" id="resume" name="resume" required>
+            <br>
+            <button type="submit">Parse</button>
+        </form>
+    </div>
+</body>
+</html>
